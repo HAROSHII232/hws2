@@ -1,25 +1,44 @@
 .friendMessage {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .friendImageAndText {
-
+  display: flex;
+  flex-direction: reverse;
+  gap: 10px;
+  text-align: left;
 }
 
 .friendImageAndText img {
-
+  width: 40px;
+  height: 40px;
 }
 
 .friendText {
-
+  position: relative;
+  background: gainsboro;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 5px 5px  5px 0px;
 }
 
 .friendText:after {
-
+  content: '';
+  position: absolute;
+  left: -7px;
+  bottom: -6.4px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent gainsboro;
+  transform: rotate(45deg);
 }
 
 .friendName {
-
+  color: black;
+  font-weight: bold;
 }
 
 .friendMessageText {
@@ -27,5 +46,9 @@
 }
 
 .friendTime {
-
+  align-self: flex-start;
+  font-size: 8px;
+  font-weight: bold;
+  padding-left: 9px;
+  margin-top: 2px;
 }

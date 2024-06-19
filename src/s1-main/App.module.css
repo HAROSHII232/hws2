@@ -1,11 +1,34 @@
 .App {
     --header_height: 60px;
+    padding: 50px 0px;
+    height: 100vh;
 }
 
 .hw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+}
 
+.hw>div {
+    width: 100%;
 }
 
 .hwTitle {
+    line-height: 2;
+    font-weight: bold;
+    position: relative;
+    padding-left: 50px;
+}
 
+.hwTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(225, 225, 225);
 }
