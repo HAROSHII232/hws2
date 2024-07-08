@@ -9,7 +9,6 @@
 }
 
 .error {
-  margin-top: 7px;
   color: #CC0000;
 }
 
@@ -20,7 +19,9 @@
   border-radius: 5px;
 }
 
-.input:focus {}
+.input:focus {
+ outline: #D1D1D1;
+}
 
 .errorInput {
   width: 370px;
@@ -61,4 +62,6 @@
   margin-bottom: 10px;
 }
 
-.greeting {}
+.greeting {
+  margin-top: 10px;
+}

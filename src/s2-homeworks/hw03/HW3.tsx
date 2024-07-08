@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import { v1 } from "uuid";
 import s2 from "../../s1-main/App.module.css";
 import GreetingContainer from "./GreetingContainer";
@@ -25,7 +25,7 @@ export type UserType = {
 
 export const pureAddUserCallback = (
   name: string,
-  setUsers: Dispatch<SetStateAction<any>>, //Array<string | UserType
+  setUsers: (users: UserType[]) => void,
   users: Array<UserType>
 ) => {
   // need to fix any
