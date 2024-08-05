@@ -1,23 +1,55 @@
 .item {
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .item:last-of-type {
+  border-bottom: none;
 }
 
 .users {
+  width: 100%;
+  border-spacing: 0;
 }
 
 .buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .container {
+  display: flex;
+  align-self: start;
+flex-direction: column;
+  max-width: 606px;
+  padding: 33px 0px 43px;
 }
 
-.thead {
+.thead {  
+  background: #E5E5E5;
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.41px;
 }
 
 .nameCol {
+width: 295px;
+  padding: 16px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.nameCol:last-child {
+  border: none;
 }
 
 .ageCol {
+  padding: 16px;
+  border-bottom: 1px solid #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.41px;
 }
